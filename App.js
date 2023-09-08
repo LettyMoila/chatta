@@ -4,6 +4,7 @@ import { useFonts } from 'expo-font';
 import {homeScreen} from './pages/HomeScreen';
 import LoginScreen from './pages/LoginScreen';
 import Register from './pages/Register';
+import ProfileScreen from './pages/ProfileScreen';
 
 export default function App() {
   useFonts({
@@ -11,7 +12,7 @@ export default function App() {
   })
   return (
     <View style={styles.container}>
-      <Register />
+      <ProfileScreen />
       <StatusBar style="auto" />
     </View>
   );
